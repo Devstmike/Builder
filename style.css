@@ -1,0 +1,280 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+:root{
+    --my-green :  #46a87d;
+}
+
+body{
+    /* background-color: #095653; */
+    font-family: sans-serif;
+    font-family: 'poppins', sans-serif;    
+    background-color: white;
+}
+
+
+.Tags{
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+
+.site{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    margin-left: 20%;
+    width: 60%;
+    border: 1px solid grey;
+    margin-top: 2px;
+}
+
+.properties{
+    position: fixed;
+    top: 0;
+    right: 0;
+    overflow-y: auto;
+}
+
+
+/* change color to black */
+.Tags , .properties{
+    background-color: #043636;
+    color: white;
+    height: 100%;
+    width: 19%;
+    border: 1px solid;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+
+.Tags > .gridcontainer{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 30px 0;
+}
+
+
+.Tags > .gridcontainer .item > *:first-child{
+    color: #46a87d;
+}
+
+.Tags > .gridcontainer .item{
+    border: 1px solid;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 5px;
+    box-shadow: 1px 1px 2px white, 1px 1px 5px rgb(0, 140, 255);
+}
+
+.Tags > .gridcontainer .item > p{
+    font-size: 0.8rem;
+    color: white;
+}
+
+.Tags >  *:first-child , .properties >  *:first-child{
+    text-align: center;
+    border: 1px solid;
+    margin: 0 30px;
+    border-radius: 5px;
+}
+
+
+.properties .first button {
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 3px;
+    padding: 5px 10px;
+    color: white;
+    font-family: 'poppins', sans-serif;
+    font-weight: 600;
+    text-align: left;
+    margin-top: 20px;
+    position: relative;    
+}
+
+.properties .first {
+    margin-top: 30px;
+}
+
+.properties .first button::after {
+    content: '\002B';
+    font-size: 1.2rem;
+    color: var(--my-green);
+    /* background-color: white; */
+    border-radius: 7px;
+    /* padding: 0 8px;
+    box-shadow: 1px 1px 5px white; */
+    position: absolute;
+    right: 0;
+    margin-right: 10px;
+    margin-top: -5px;
+    
+}
+
+.properties .first > * {
+    width: 100%;
+}
+
+/* .properties .first > div {
+    padding-bottom: 20px;
+    border-bottom: 1px solid;
+    border-color: rgb(201, 191, 50);
+} */
+
+.properties .first > div .flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.properties .first > div .flex2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.properties .first > div .flex2 input{
+    width: 50px;
+}
+
+
+
+.properties .first > div{
+    background-color: #172426;
+    color: white;
+    
+}
+
+.properties .first > div .flex > *:last-child{
+    width: 50%;
+}
+
+.properties .first > div .flex > *:last-child > *{
+    width: 100%;
+}
+
+.showProp{
+    display: block !important;
+}
+
+
+/* Make display none */
+.prop {
+    display: none;
+}
+
+
+
+.properties .first > div .Spaceflex2{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.properties .first > div .Spaceflex input{
+    width: 80%;
+    border-radius: 2px;
+}
+
+
+.properties .first > div .Spaceflex3 p{
+    text-transform: capitalize;
+    /* text-align: center; */
+    font-size: 0.8rem;
+}
+
+
+.properties .first > div .Spaceflex p select{
+    border-radius: 2px;
+}
+
+
+.properties .first > div .Spaceflex > div{
+    margin-bottom: 20px;
+}
+
+
+
+.site{}
+
+.Tags > button{
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 20px;
+    width: 90%;
+    border-radius: 3px;
+    padding: 10px 0;
+    font-family: 'poppins', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    background-color: rgb(18, 95, 50);
+    color: white;
+}
+
+
+
+
+/* remiover demo  */
+/* .site{
+    background-color: rgb(15, 71, 94);
+    overflow-y: auto;
+}
+
+.site .header{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    align-items: center;
+    color: white;
+    border: none;
+    border-color: transparent;
+}
+
+.site .header ul li{
+    display: inline-block;
+    padding: 20px;
+    color: white;
+}
+
+.site .image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.site .image{
+    height: 300px;
+}
+
+body{
+    background-color: rgb(15, 71, 94);
+}
+
+.site .container{
+    display: grid;
+    grid-template-columns: repeat(3 , 1fr);
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.site .container > *{
+    border-radius: 5px;
+    border: 1px solid white;
+} */

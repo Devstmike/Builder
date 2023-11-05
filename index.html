@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;700;800;900&display=swap" rel="stylesheet">
+    <!-- Font awesome-->
+    <script src="https://kit.fontawesome.com/26aafe571c.js" crossorigin="anonymous"></script>   
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <section class="Tags">
+        <h1>Structure</h1>
+        <div class="gridcontainer">
+            <div class="item" draggable="true" ondragstart="DragStart(event)" id="h3">
+                <i class="fa-solid fa-heading"></i>
+                <p>Heading</p>
+            </div>
+            <div class="item" draggable="true" ondragstart="DragStart(event)" id="p">
+                <i class="fa-solid fa-font"></i>
+                <p>Text</p>
+            </div>
+            <div class="item" draggable="true" ondragstart="DragStart(event)" id="img">
+                <i class="fa-solid fa-image"></i>
+                <p>image</p>
+            </div>
+            <div class="item" draggable="true" ondragstart="DragStart(event)" id="video">
+                <i class="fa-solid fa-video"></i>
+                <p>Video</p>
+            </div>
+            <div class="item" draggable="true" ondragstart="DragStart(event)" id="button">
+                <i class="fa-solid fa-tablet-button"></i>
+                <p>button</p>
+            </div>
+            <div class="item" draggable="true" id="list">
+                <i class="fa-solid fa-list"></i>
+                <p>list</p>
+            </div>
+            <div class="item" draggable="true" id="menu">
+                <i class="fa-solid fa-bars"></i>
+                <p>menu</p>
+            </div>
+            <div class="item" draggable="true" id="icons">
+                <i class="fa-solid fa-icons"></i>
+                <p>icons</p>
+            </div>
+            <div class="item" draggable="true" id="Audio">
+                <i class="fa-solid fa-file-audio"></i>
+                <p>Audio</p>
+            </div>
+            <div class="item" draggable="true" id="search">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <p>search</p>
+            </div>
+            <div class="item" draggable="true" id="section">
+                <i class="fa-solid fa-section"></i>
+                <p>Section</p>
+            </div>
+            <div class="item" draggable="true" id="dv">
+                <i class="fa-regular fa-square"></i>
+                <p>div</p>
+            </div>
+            <div class="item" draggable="true">
+            
+                <p>input</p>
+            </div>
+            <div class="item" draggable="true">
+                <i class="fa-solid fa-link"></i>
+                <p>link</p>
+            </div>
+            <div class="item" draggable="true">
+            
+                <p>header</p>
+            </div>
+            <div class="item" draggable="true">
+            
+                <p>footer</p>
+            </div>
+            <div class="item" draggable="true">
+                <i class="fa-regular fa-hand-pointer"></i>
+                <p>select</p>
+            </div>
+            <div class="item" draggable="true">
+                
+                <p>Flex Box</p>
+            </div>
+            <div class="item" draggable="true">
+                
+                <p>Grid</p>
+            </div>
+        </div>
+        <button onclick="openFullscreen()">full screen</button>
+    </section>
+    <section class="site" ondragover="DragOver(event)" ondrop="Drop(event)">
+        
+    </section>
+    <section class="properties">
+        <h1>Styling</h1>
+        <div class="first">
+            <button class="collapse">Typography</button>
+            <div class="prop">
+                <div class="flex">
+                    <p>font size</p>
+                    <div class="flex2">
+                        <input type="number">
+                        <select name="" id="">
+                            <option value="px">px</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="flex">
+                    <p>font weight</p>
+                    <div class="flex2">
+                        <select name="" id="">
+                            <option value="100">100</option>
+                        </select>    
+                    </div>
+                </div>
+                <div class="flex">
+                    <p>Text case</p>
+                    <div class="flex2">
+                        <select name="" id="">
+                            <option value="uppercase">uppercase</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="flex">
+                    <p>font</p>
+                     <select name="" id="">
+                        <option value="poppins">poppins</option>
+                     </select>
+                </div>
+                <div class="flex">
+                    <p>Color</p>
+                    <input type="color">
+                </div>
+            </div>
+            <button class="collapse">Color</button>
+            <div class="prop">
+                
+            </div>
+            <button class="collapse">Sizing and Spacing</button>
+            <div class="prop">
+                <div class="Spaceflex">
+                    <p>
+                        <span>Margin</span>
+                         <select name="" id="">
+                            <option value="px">px</option>
+                         </select>
+                    </p>
+                    <div class="Spaceflex2">
+                        <div class="Spaceflex3">
+                            <input type="number">
+                            <p>left</p>
+                        </div>
+                        <div class="Spaceflex3">
+                            <input type="number">
+                            <p>right</p>
+                        </div>
+                        <div class="Spaceflex3">
+                            <input type="number">
+                            <p>Top</p>
+                        </div>
+                        <div class="Spaceflex3">
+                            <input type="number">
+                            <p>down</p>
+                        </div>
+                        <div class="Spaceflex3">
+                            <i class="fa-regular fa-square"></i>
+                            <p>All</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="Spaceflex">
+                    <p>
+                        <span>padding</span>
+                         <select name="" id="">
+                            <option value="px">px</option>
+                         </select>
+                    </p>
+                    <div class="Spaceflex2">
+                        <div class="Spaceflex3">
+                            <input type="number">
+                            <p>left</p>
+                        </div>
+                        <div class="Spaceflex3">
+                            <input type="number">
+                            <p>right</p>
+                        </div>
+                        <div class="Spaceflex3">
+                            <input type="number">
+                            <p>Top</p>
+                        </div>
+                        <div class="Spaceflex3">
+                            <input type="number">
+                            <p>down</p>
+                        </div>
+                        <div class="Spaceflex3">
+                            <i class="fa-regular fa-square"></i>
+                            <p>All</p>
+                        </div>
+                    </div>
+                </div>             
+                <div class="Spaceflex">
+                    <p>
+                        <span>Border</span>
+                         <select name="" id="">
+                            <option value="px">px</option>
+                         </select>
+                    </p>
+                    <div class="Spaceflex2">
+                        <div class="Spaceflex3">
+                            <input type="number">
+                            <p>left</p>
+                        </div>
+                        <div class="Spaceflex3">
+                            <input type="number">
+                            <p>right</p>
+                        </div>
+                        <div class="Spaceflex3">
+                            <input type="number">
+                            <p>Top</p>
+                        </div>
+                        <div class="Spaceflex3">
+                            <input type="number">
+                            <p>down</p>
+                        </div>
+                        <div class="Spaceflex3">
+                            <i class="fa-regular fa-square"></i>
+                            <p>All</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="Spaceflex">
+                    <p>
+                        <span>width</span>
+                         <select name="" id="">
+                            <option value="px">px</option>
+                         </select>
+                    </p>
+                    <div class="Spaceflex2">
+                        <div class="Spaceflex3">
+                            <input type="number">
+                            <p>width</p>
+                        </div>
+                        <div class="Spaceflex3">
+                            <input type="number">
+                            <p>max-width</p>
+                        </div>
+                    </div>
+                </div>             
+                <div class="Spaceflex">
+                    <p>
+                        <span>Height</span>
+                         <select name="" id="">
+                            <option value="px">px</option>
+                         </select>
+                    </p>
+                    <div class="Spaceflex2">
+                        <div class="Spaceflex3">
+                            <input type="number">
+                            <p>Height</p>
+                        </div>
+                        <div class="Spaceflex3">
+                            <input type="number">
+                            <p>Min-height</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="collapse">Responsive</button>
+            <div class="prop">
+                
+            </div>
+            <button class="collapse">Flexbox properties</button>
+            <div class="prop">
+                
+            </div>
+            <button class="collapse">Grid properties</button>
+            <div class="prop">
+                
+            </div>
+            <button class="collapse">Hover</button>
+            <div class="prop">
+                
+            </div>
+        </div>
+
+    </section>
+</body>
+</html>
+<!-- figma file
+https://www.figma.com/file/JGu0D9yCDhDgCi792n883N/builder?type=design&node-id=0-1&mode=design&t=c8BB6dghjAKFJKY4-0
+-->
