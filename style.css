@@ -10,12 +10,14 @@
 
 :root{
     --my-green :  #46a87d;
+    --deep-green : #043636;
+    --poppins : 'poppins', sans-serif
 }
 
 body{
     /* background-color: #095653; */
-    font-family: sans-serif;
-    font-family: 'poppins', sans-serif;    
+    /* font-family: sans-serif;
+    font-family: 'poppins', sans-serif;     */
     background-color: white;
 }
 
@@ -48,13 +50,15 @@ body{
 
 /* change color to black */
 .Tags , .properties{
-    background-color: #043636;
+    background-color: var(--deep-green);
     color: white;
     height: 100%;
     width: 19%;
     border: 1px solid;
     padding: 10px;
     border-radius: 5px;
+    font-family: sans-serif;
+    font-family: 'poppins', sans-serif;    
 }
 
 
@@ -210,8 +214,10 @@ body{
 }
 
 
-
-.site{}
+/* 
+.site {
+    background-color: red;
+} */
 
 .Tags > button{
     position: absolute;
@@ -226,6 +232,151 @@ body{
     background-color: rgb(18, 95, 50);
     color: white;
 }
+
+.nowActive{
+    /* background-color: yellow; */
+}
+
+
+.site .insertNewWrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+    border: 4px solid var(--deep-green);
+    color: var(--deep-green);
+}
+
+.site .insertNewWrapper i{
+    font-size: 2rem;
+    margin-right: 10px;
+    margin-left: 100px;
+}
+
+.site .selectWrapper h3{
+    font-family: var(--poppins);
+    border: 1px solid var(--deep-green);
+    border-radius: 5px;
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 5px;
+    color: var(--deep-green);
+    display: none;
+    cursor: pointer;
+}
+
+.site .selectWrapper{
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    width: 100px;
+    display: block;
+    transition:  2s linear 1s;
+}
+
+.displayWrapper{
+    display: block !important;
+    align-items: ;
+}
+
+.properties .first > div:nth-child(10) > div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.properties .first > div:nth-child(10) > div > *:last-child{
+    width: ;
+}
+
+
+.prop .flexprop{
+    
+}
+
+.properties .first > div:not(.properties .first > div:nth-child(2)){
+    padding: 10px;
+}
+ 
+.properties .first > div:not(.properties .first > div:nth-child(2)) > div{
+    margin-bottom: 20px;
+}
+
+
+.properties .first > div:nth-child(4) > div > *,
+.properties .first > div:nth-child(8) > div > *,
+.properties .first > div:nth-child(10) > div > *,
+.properties .first > div:nth-child(12) > div > *,
+.properties .first > div:nth-child(14) > div > *,
+.properties .first > div:nth-child(15) > div > *{
+    width: 50%;
+}
+
+
+/* exclude 3rd div */
+
+.properties .first > div:nth-child(2) > div > *{
+    width: ini;
+}
+
+
+.properties .first > div:nth-child(4) > div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.properties .first > div:nth-child(12) > div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.properties .first > div:nth-child(12) > div > div{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.properties .first > div:nth-child(12) > div > div > *:last-child{
+    width: 40%;
+}
+
+
+.properties .first > div:nth-child(12) > div > div > *:first-child{
+    width: 60%;
+    margin-right: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
